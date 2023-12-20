@@ -4,8 +4,12 @@ import '../modules/add_product/add_product_binding.dart';
 import '../modules/add_product/add_product_view.dart';
 import '../modules/home/home_binding.dart';
 import '../modules/home/home_view.dart';
+import '../modules/list_user/list_user_binding.dart';
+import '../modules/list_user/list_user_view.dart';
 import '../modules/login/login_binding.dart';
 import '../modules/login/login_view.dart';
+import '../modules/other_product/other_product_binding.dart';
+import '../modules/other_product/other_product_view.dart';
 import '../modules/signup/signup_binding.dart';
 import '../modules/signup/signup_view.dart';
 import '../modules/splash/splash_binding.dart';
@@ -50,6 +54,16 @@ class AppPages {
       name: _Paths.VIEW_PRODUCT,
       page: () => ViewProductView(),
       binding: ViewProductBinding(),
+    ),
+    GetPage(
+      name: _Paths.OTHER_PRODUCT,
+      page: () => const OtherProductView(),
+      binding: OtherProductBinding(),
+    ),
+    GetPage(
+      name: _Paths.LIST_USER,
+      page: () => ListUserView(),
+      binding: ListUserBinding(),
     ),
   ];
 }

@@ -1,3 +1,4 @@
+import 'package:e_commerce/app/modules/list_user/list.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -63,7 +64,7 @@ class HomeView extends GetView<HomeController> {
                           color: Colors.white),
                     ),
                     SizedBox(
-                      height: height * 0.05,
+                      height: height * 0.04,
                     ),
                     // Spacer(),
                     InkWell(
@@ -87,7 +88,27 @@ class HomeView extends GetView<HomeController> {
                           )),
                     ),
                     SizedBox(
-                      height: height * 0.001,
+                      height: height * 0.005,
+                    ),
+                    InkWell(
+                      onTap: () {
+                        Get.to(()=> const UserList());
+                      },
+                      child: Container(
+                          height: height * 0.065,
+                          width: width * 0.75,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(15),
+                              color: const Color(0xFFDC5F00)),
+                          child: Center(
+                            child: Text(
+                              "Other Product",
+                              style: GoogleFonts.poppins(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                  color: Colors.white),
+                            ),
+                          )),
                     ),
 
                     SizedBox(
